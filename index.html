@@ -1,0 +1,184 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(185, 75%, 39%);
+        background-image: url(https://svgshare.com/i/VGA.svg),
+          url(https://svgshare.com/i/VEe.svg);
+        background-position: -80% 250%, 220% -170%;
+        background-repeat: no-repeat, no-repeat;
+        font-size: 18px;
+        font-family: "Kumbh Sans", sans-serif;
+      }
+
+      .profile-card {
+        position: absolute;
+        top: 27%;
+        left: 38%;
+        width: 340px;
+        height: 360px;
+        background-color: white;
+        border-radius: 15px;
+        background-image: url(https://svgshare.com/i/VES.svg);
+        background-repeat: no-repeat;
+      }
+
+      .avatar {
+        position: absolute;
+        width: 114px;
+        height: 114px;
+        background-color: white;
+        background-image: url(./images/image-victor.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+        border: 5px solid white;
+        top: 22%;
+        left: 33%;
+      }
+      .username {
+        line-height: 25rem;
+        padding-left: 6.3rem;
+      }
+
+      .user-age {
+        position: absolute;
+        top: 13.3rem;
+        left: 14.5rem;
+        font-weight: lighter;
+        color: gray;
+      }
+
+      .user-city {
+        position: absolute;
+        top: 15rem;
+        left: 8.6rem;
+        font-weight: lighter;
+        color: gray;
+      }
+
+      .line {
+        border-bottom: 1px solid gray;
+        position: relative;
+        top: -10rem;
+      }
+
+      .followers {
+        position: absolute;
+        top: 19rem;
+        left: 3.5rem;
+        font-weight: bold;
+      }
+
+      .followers-label {
+        position: absolute;
+        top: 20.7rem;
+        left: 2.7rem;
+        font-weight: lighter;
+        color: gray;
+        font-size: 80%;
+      }
+
+      .likes {
+        position: absolute;
+        top: 19rem;
+        left: 9rem;
+        font-weight: bold;
+      }
+
+      .likes-label {
+        position: absolute;
+        font-weight: lighter;
+        color: gray;
+        font-size: 80%;
+        top: 20.7rem;
+        left: 9.5rem;
+      }
+
+      .photos {
+        position: absolute;
+        font-weight: bold;
+        top: 19rem;
+        left: 15.3rem;
+      }
+
+      .photos-label {
+        position: absolute;
+        font-weight: lighter;
+        color: gray;
+        font-size: 80%;
+        top: 20.7rem;
+        left: 15.2rem;
+      }
+
+      .attribution {
+        font-size: 21px;
+        border: 5px solid black;
+        width: 41rem;
+        padding: 10px;
+        margin-top: 43rem;
+        margin-left: 23rem;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 600px) {
+        .profile-card {
+          position: absolute;
+          left: 3%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos -->
+    <div class="main">
+      <div class="profile-card">
+        <div class="avatar"></div>
+        <h3 class="username">Victor Crest</h3>
+        <div class="user-age">26</div>
+        <div class="user-city">London</div>
+        <div class="line"></div>
+        <div class="followers">80K</div>
+        <div class="followers-label">Followers</div>
+
+        <div class="likes">803K</div>
+        <div class="likes-label">Likes</div>
+
+        <div class="photos">1.4K</div>
+        <div class="photos-label">Photos</div>
+      </div>
+    </div>
+  </body>
+</html>
